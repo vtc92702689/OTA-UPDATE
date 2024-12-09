@@ -110,7 +110,8 @@ void loop() {
     u8g2.drawStr(0,10,"WiFi reconnected");
     u8g2.drawStr(0, 20, WiFi.localIP().toString().c_str());
     u8g2.sendBuffer();
+    delay(1000);  // Đợi 1 giây trước khi kiểm tra lại
   }
 
-  delay(1000);  // Đợi 1 giây trước khi kiểm tra lại
+  
 }
